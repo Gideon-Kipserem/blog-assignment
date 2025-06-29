@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Dev Blog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>My Dev Blog</h1>
+    <p>Exploring the world of software development, one concept at a time.</p>
+  </header>
+
+  <main>
+    <article class="blog-post">
+      <h2>Understanding Optional Chaining in JavaScript</h2>
+      <p class="date">Posted on June 29, 2025</p>
+      <p>
+        Optional chaining (`?.`) is a powerful feature in JavaScript that allows
+        us to safely access deeply nested properties without having to check if
+        each level exists.
+      </p>
+      <pre><code>
+const user = {
+  profile: {
+    name: "Andy",
+  },
+};
+
+console.log(user?.profile?.name); // "Andy"
+console.log(user?.settings?.theme); // undefined (no error)
+      </code></pre>
+      <p>
+        It’s useful in cases where you’re dealing with data from external APIs,
+        or any object where intermediate properties may be null or undefined.
+      </p>
+      <p><strong>Takeaway:</strong> Optional chaining helps avoid verbose and error-prone null checks. Use it when accessing nested data that might not always exist.</p>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Dev Blog | Built with 💻 and ☕</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
